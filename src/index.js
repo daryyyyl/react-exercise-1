@@ -1,5 +1,10 @@
 //Call all functions inside services and log updated value/s
-import { updateUser, getAllUsers, addUser } from "./services/users";
+import {
+  updateUser,
+  getAllUsers,
+  addUser,
+  getUserById,
+} from "./services/users";
 import {
   getPosts,
   getPostsByUser,
@@ -19,10 +24,8 @@ import {
   addComment,
 } from "./services/comments";
 
-// console.log("Before editing");
+// User
 // console.log(getAllUsers());
-// updateUser(1, { email: "roger@77.com", website: "hilde-edit.org" });
-// console.log("after editing");
 // addUser({
 //   name: "daryl",
 //   username: "da",
@@ -43,28 +46,21 @@ import {
 //   },
 // });
 // console.log(getAllUsers());
+// console.log(getUserById(10001));
+
+// Posts
 // console.log(getPosts());
-// console.log("Posts by Id: ");
-// console.log(getPostById(1));
-// console.log("Posts by user: ");
-// console.log(getPostsByUser(2));
-// console.log("Comment by Id: ");
-// console.log(getCommentById(3));
-// console.log("Comments by post Id: ");
-// console.log(getCommentsByPostId(4));
+// console.log(getPostsByUser(1));
+// console.log(getPostById(2));
 // addPost({ title: "KICKS ZONE", body: "KICKS ZONE POST BODY" });
-// console.log(getPosts());
-// console.log(getCommentsByPostId(1));
-// addComment({ postId: 15, name: "daryl", email: "da@da", body: "katawan" });
-// console.log(getCommentsByPostId(15));
-// console.log(getPostById(2));
-// updatePost(2, { title: "KICKS ZONE", body: "KICKS ZONE POST BODY" });
-// console.log(getPostById(2));
-// console.log(getPosts());
-// deletePostBy(1);
+// updatePostTitle(2, "KICKS ZONE TITLE");
+// updatePostBody(2, "KICKS ZONE BODY");
+// deletePostBy(2);
 // deletePostsByUserId(1);
-// console.log(getPosts());
-// console.log(getCommentById(1));
+
+// Comments
+// console.log(getCommentById(3));
+// console.log(getCommentsByPostId(4));
 // updateCommentBody(1, "KICKS ZONE COMMENT BODY");
 // deleteCommentById(1);
-// console.log(getCommentById(1) ? getCommentById(1) : "No comment found!");
+// addComment({ postId: 1999, name: "daryl", email: "da@da", body: "katawan" });

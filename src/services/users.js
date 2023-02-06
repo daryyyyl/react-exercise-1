@@ -9,7 +9,7 @@ export function getAllUsers() {
   return [...users];
 }
 
-function getUserById(id) {
+export function getUserById(id) {
   //get single user by id
   return users.find((user) => user.id === id);
 }

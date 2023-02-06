@@ -22,6 +22,8 @@ export function updateCommentBody(id, body) {
         body,
       };
     }
+
+    return comment;
   });
 }
 
